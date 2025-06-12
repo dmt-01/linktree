@@ -23,6 +23,7 @@ body{
 .entete {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: white;
 }
 
@@ -32,12 +33,15 @@ body{
 }
 
 .photo_profil {
-    width: 200px;
+    width: 30%;
     padding: 40px;
     display: flex;
 
 }
 
+main {
+    width: 100%;
+}
 .text_entete {
     display: flex;
     flex-direction: column;
@@ -47,23 +51,20 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .text_entete > p {
-    width: 500px;
-    font-size: 2rem;
-}
-
-.navigation > ul {
-    padding: 0;
+    font-size: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -78,7 +79,7 @@ h2 {
 }
 
 .nav_coordo > p {
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;    
@@ -107,6 +108,31 @@ h2 {
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
+}
+
+.presentation_perso{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentation_perso > p {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.nav_coordo > h2 {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+    body{
+        width: 640px;
+        margin: auto;
+    }
 }
